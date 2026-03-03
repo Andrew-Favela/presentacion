@@ -54,7 +54,7 @@ body{
     font-size:15px;
 }
 
-/* BOTONES ESTILO IMAGEN */
+/* BOTONES */
 
 .buttons{
     margin-top:35px;
@@ -93,11 +93,11 @@ body{
     transform:translateY(-3px);
 }
 
-/* SECCIÓN CARDS */
+/* SECCIONES */
 
 .section{
     width:100%;
-    padding:50px 20px 100px 20px;
+    padding:60px 20px;
     display:flex;
     justify-content:center;
 }
@@ -105,7 +105,7 @@ body{
 .glass-container{
     width:95%;
     max-width:900px;
-    padding:35px;
+    padding:40px;
     border-radius:25px;
     backdrop-filter: blur(25px);
     background:rgba(255,255,255,0.08);
@@ -113,15 +113,17 @@ body{
     box-shadow:0 20px 60px rgba(0,0,0,0.5);
 }
 
-/* GRID EXACTO COMO IMAGEN */
+.section-title{
+    font-size:28px;
+    margin-bottom:30px;
+    font-weight:600;
+}
 
 .grid{
     display:grid;
     grid-template-columns:repeat(2, 1fr);
     gap:25px;
 }
-
-/* CARDS ESTILO IMAGEN */
 
 .card{
     padding:28px;
@@ -150,7 +152,31 @@ body{
     opacity:0.85;
 }
 
-/* FOOTER */
+/* CTA FINAL */
+
+.cta-final{
+    padding:80px 20px 120px 20px;
+    max-width:800px;
+}
+
+.cta-final h2{
+    font-size:34px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.cta-final p{
+    opacity:0.8;
+    margin-bottom:35px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+    .grid{
+        grid-template-columns:1fr;
+    }
+}
 
 footer{
     margin-top:auto;
@@ -159,16 +185,12 @@ footer{
     opacity:0.6;
 }
 
-@media(max-width:768px){
-    .grid{
-        grid-template-columns:1fr;
-    }
-}
-
 </style>
 </head>
 
 <body>
+
+<!-- HERO -->
 
 <div class="hero">
     <h1>Andrew Favela</h1>
@@ -181,58 +203,122 @@ footer{
     </div>
 </div>
 
+<!-- SECCIÓN DE DOLOR -->
+
 <div class="section">
     <div class="glass-container">
-
+        <div class="section-title">¿Te identificas con alguno de estos problemas?</div>
         <div class="grid">
-
-    <div class="card">
-        <h3>Producción</h3>
-        <p>Control total de procesos, costos y eficiencia operativa.</p>
+            <div class="card">
+                <h3>Falta de control financiero</h3>
+                <p>No sabes exactamente cuánto ganas por producto o proyecto.</p>
+            </div>
+            <div class="card">
+                <h3>Procesos manuales</h3>
+                <p>Dependencia excesiva de Excel y errores constantes.</p>
+            </div>
+            <div class="card">
+                <h3>Inventarios desactualizados</h3>
+                <p>Diferencias entre sistema y almacén físico.</p>
+            </div>
+            <div class="card">
+                <h3>Decisiones sin datos</h3>
+                <p>No cuentas con información en tiempo real para crecer con seguridad.</p>
+            </div>
+        </div>
     </div>
-
-    <div class="card">
-        <h3>Inventarios</h3>
-        <p>Stock en tiempo real y reducción de pérdidas.</p>
-    </div>
-
-    <div class="card">
-        <h3>Administración</h3>
-        <p>Información financiera clara para decisiones estratégicas.</p>
-    </div>
-
-    <div class="card">
-        <h3>Facturación CFDI</h3>
-        <p>Cumplimiento fiscal automático y seguro.</p>
-    </div>
-
-    <div class="card">
-        <h3>Control de Costos</h3>
-        <p>Detecta fugas de dinero y mejora tu rentabilidad.</p>
-    </div>
-
-    <div class="card">
-        <h3>Compras Inteligentes</h3>
-        <p>Optimiza proveedores y reduce gastos innecesarios.</p>
-    </div>
-
-    <div class="card">
-        <h3>Reportes Ejecutivos</h3>
-        <p>Indicadores clave en tiempo real para dueños y gerentes.</p>
-    </div>
-
-    <div class="card">
-        <h3>Multi-empresa</h3>
-        <p>Administra varias razones sociales desde un solo sistema.</p>
-    </div>
-
-    <div class="card">
-        <h3>Automatización de Procesos</h3>
-        <p>Reduce errores humanos y ahorra tiempo operativo.</p>
-    </div>
-
 </div>
 
+<!-- SECCIÓN DE BENEFICIOS -->
+
+<div class="section">
+    <div class="glass-container">
+        <div class="section-title">Lo que obtienes con ERP SOE</div>
+        <div class="grid">
+            <div class="card">
+                <h3>Control total en tiempo real</h3>
+                <p>Visibilidad completa de tu operación en un solo sistema.</p>
+            </div>
+            <div class="card">
+                <h3>Mayor rentabilidad</h3>
+                <p>Identifica fugas de dinero y mejora márgenes.</p>
+            </div>
+            <div class="card">
+                <h3>Escalabilidad estructurada</h3>
+                <p>Crecimiento sin caos administrativo.</p>
+            </div>
+            <div class="card">
+                <h3>Automatización inteligente</h3>
+                <p>Menos errores humanos, más eficiencia operativa.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SECCIÓN DE MÓDULOS (LA TUYA ORIGINAL) -->
+
+<div class="section">
+    <div class="glass-container">
+        <div class="section-title">Módulos Estratégicos</div>
+        <div class="grid">
+
+            <div class="card">
+                <h3>Producción</h3>
+                <p>Control total de procesos, costos y eficiencia operativa.</p>
+            </div>
+
+            <div class="card">
+                <h3>Inventarios</h3>
+                <p>Stock en tiempo real y reducción de pérdidas.</p>
+            </div>
+
+            <div class="card">
+                <h3>Administración</h3>
+                <p>Información financiera clara para decisiones estratégicas.</p>
+            </div>
+
+            <div class="card">
+                <h3>Facturación CFDI</h3>
+                <p>Cumplimiento fiscal automático y seguro.</p>
+            </div>
+
+            <div class="card">
+                <h3>Control de Costos</h3>
+                <p>Detecta fugas de dinero y mejora tu rentabilidad.</p>
+            </div>
+
+            <div class="card">
+                <h3>Compras Inteligentes</h3>
+                <p>Optimiza proveedores y reduce gastos innecesarios.</p>
+            </div>
+
+            <div class="card">
+                <h3>Reportes Ejecutivos</h3>
+                <p>Indicadores clave en tiempo real para dueños y gerentes.</p>
+            </div>
+
+            <div class="card">
+                <h3>Multi-empresa</h3>
+                <p>Administra varias razones sociales desde un solo sistema.</p>
+            </div>
+
+            <div class="card">
+                <h3>Automatización de Procesos</h3>
+                <p>Reduce errores humanos y ahorra tiempo operativo.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- CTA FINAL -->
+
+<div class="cta-final">
+    <h2>Agenda una demostración personalizada sin costo</h2>
+    <p>Descubre cómo optimizar tu empresa, reducir errores y aumentar rentabilidad en menos de 30 minutos.</p>
+
+    <div class="buttons">
+        <a class="btn btn-primary" href="https://wa.me/5218112580800">Quiero mi demostración</a>
     </div>
 </div>
 
